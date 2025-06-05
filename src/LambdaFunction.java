@@ -1,10 +1,21 @@
+
+
+
+
 interface Company{
     void name(String name);
 }
 
+@FunctionalInterface
 interface Corporation{
     void name(String Name);
 }
+
+@FunctionalInterface
+interface Adder{
+    int adds(int a, int b);
+}
+
 
 public class LambdaFunction {
     public static void main(String[] args) {
@@ -23,7 +34,14 @@ public class LambdaFunction {
             System.out.printf("Hello! Im %s and I'm new in This Corporation\n", Name);
         };
 
-        corp.name("Surendra");
+        // As you can see you don't need to actually specify return while returning in lambda function.
+        Adder adder = (a,b) -> a + b;
+        corp.name("Catherine");
         company.name("Harish");
+
+        int result = adder.adds(2,3);
+
+        System.out.println("\n\nFinal Result = " + result);
+
     }
 }

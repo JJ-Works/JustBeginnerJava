@@ -1,5 +1,5 @@
 /*So what I want to discuss in this section is the use of interfaces
-*
+*Everything ending with 'able' are interfaces.
 * -> Interface can be used instead of abstract classes
 * -> Interface can be used to declare what is needed to be done.
 * -> Multiple interfaces can be implemented at once.
