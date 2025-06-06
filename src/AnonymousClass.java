@@ -14,7 +14,7 @@ abstract class B
 
 public class AnonymousClass {
     public static void main(String[] args) {
-        A obj = new A(){
+        A obj =new A(){
             public void shout(){
                 System.out.println("Hello Universe!!");
             }
