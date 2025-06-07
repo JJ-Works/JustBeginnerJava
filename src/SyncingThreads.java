@@ -21,7 +21,16 @@
 *                               |      (stops)       |
 *                               |                    |
 *                              🔻                   🔻
-* * */
+*                         running                  running
+*
+* let's talk about states of thread
+*
+* 1> New => when new obj is created then it is in New state
+* 2> Runnable state => when you hit start() method it get to runnable state before actually running in the cpu.
+* 3> Running state => This is when the program is actually running in the cpu using in run() method.
+* 4> Wait state => when you use sleep() or wait() method then it is in wait state. notify() should be used with wait method.
+* 5> Dead state => when stop() method is used to stop the thread. Not actually recommended in software may cause problems.
+*  */
 
 
 class Counter{
