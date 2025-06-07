@@ -22,10 +22,12 @@ public class ImplementingRunnable {
 
         Thread t1 = new Thread(obj1);
         Thread t2 = new Thread(obj2);
-
-        t1.setPriority(8);
-        t1.start();
-        t2.start();
-
+        Thread t3 = new Thread(() -> System.out.println("thread 3 is running."));
+        Thread t4 = new Thread(Runnable objNew);
+//        t1.setPriority(8);
+//        t1.start();
+//        t2.start();
+        t3.start();
     }
+    public static
 }
