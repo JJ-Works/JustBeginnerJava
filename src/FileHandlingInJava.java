@@ -16,15 +16,17 @@ public class FileHandlingInJava {
         try{
             if (file.exists()){
                 System.out.println("File Name: "+file.getName());
-                System.out.println(file.getAbsolutePath());
-                System.out.println(file.canRead());
-                System.out.println(file.canWrite());
-                System.out.println(file.length());
+                System.out.println("File path: "+file.getAbsolutePath());
+                System.out.println("File canRead: "+file.canRead());
+                System.out.println("File canWrite: "+file.canWrite());
+                System.out.println("File Length: "+file.length());
+                System.out.println("File Size: "+file.length()*8+"b");
+                System.out.println("File Delete: "+ file.delete());
             }
             else System.out.println("File doesn't exists!");
         }
-        catch (IOException e){
-            System.out.println("File creation Failed!");
+        catch (Exception e){
+            System.out.println(e);
         }
     }
 }
