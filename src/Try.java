@@ -5,7 +5,7 @@ public static void main(String[] a){
     System.out.println("Hello");
 
     // you can use var to make array but don't use square bracket for declaration.
-    var array = new int[];
+    var array = new int[2];
     var cat = 22;
     var ca = 55;
     var string = "catter";
@@ -13,3 +13,7 @@ public static void main(String[] a){
 
     var object = new ClassName();// This also works.
 }}
+
+class ClassName{
+
+}
